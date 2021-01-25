@@ -1,0 +1,58 @@
+.App {
+  height: 100vh !important;
+  width: 100%;
+  .section-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    .step-wizard {
+      color: #333333;
+      font-family: Roboto;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 0.26px;
+      line-height: 25px;
+      .step {
+        height: 4px;
+        width: 4px;
+        margin: 0 4px;
+        background-color: #333333;
+        border: none;
+        border-radius: 50%;
+        opacity: 0.5;
+      }
+      .active {
+        opacity: 1 !important;
+      }
+    }
+  }
+  .section-right {
+    background-color: #286EFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+  .dummy-heading {
+    height: 38px;
+    width: 340px;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.26px;
+    line-height: 38px;
+    text-align: center;
+  }
+  .dummy-text {
+    height: 149px;
+    width: 319px;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 18px;
+    letter-spacing: 0.26px;
+    line-height: 30px;
+    text-align: justify;
+  }
+}

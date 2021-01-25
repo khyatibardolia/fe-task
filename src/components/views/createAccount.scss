@@ -1,0 +1,116 @@
+//for media queries
+$medium: 425px;
+
+.create-account-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  .w-90 {
+    width: 90%;
+  }
+  .section-title {
+    color: #333333;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.26px;
+    line-height: 38px;
+  }
+  .sub-text {
+    font-family: Roboto;
+    font-size: 15px;
+    letter-spacing: 0.26px;
+    line-height: 30px;
+    .sub-text-span {
+      color: #333333;
+      font-weight: normal;
+    }
+    a {
+      color: #286EFA;
+      font-weight: bold;
+    }
+  }
+  .user-form {
+    .field {
+      position: relative;
+      .eye-icon {
+        position: absolute;
+        right: 10px;
+        top: 12px;
+        cursor: pointer;
+      }
+      input, select {
+        border: 1px solid #EDEDED !important;
+        outline: none;
+        border-radius: 4px;
+        color: #333333;
+        position: relative;
+        &:focus {
+          border: 1px solid #EDEDED !important;
+        }
+      }
+      .show-error {
+        border: 1px solid #F53C3C !important;
+        &:focus {
+          border: 1px solid #F53C3C !important;
+        }
+      }
+      .error-text {
+        color: #F53C3C !important;
+      }
+      input:focus ~ .floating-label, input:valid:not(:focus) ~ .floating-label {
+        top: -23px !important;
+        font-size: small;
+        color: #777777;
+        span {
+          background-color: #fff;
+        }
+      }
+      .floating-label {
+        pointer-events: none;
+        position: absolute;
+        left: 0;
+        top: -3px !important;
+        color: #777777;
+        font-family: Roboto;
+        font-size: 15px;
+        letter-spacing: 0.26px;
+        line-height: 30px;
+        transition: 0.2s ease all;
+      }
+    }
+    .submit-btn {
+      font-family: Roboto;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 0.26px;
+      line-height: 25px;
+      border-radius: 4px;
+      .next-button {
+        border: none !important;
+        background-color: #286EFA;
+        color: #ffffff;
+        cursor: pointer;
+        height: 50px;
+      }
+      .btn-disabled {
+        border: none !important;
+        height: 50px;
+        background-color: #EDEDED !important;
+        color: #AAAAAA !important;
+        cursor: not-allowed !important;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: $medium) {
+  .create-account-panel {
+    padding: 1rem !important;
+  }
+  .create-account-panel .main-div {
+    margin: 1rem 1rem !important;
+  }
+}
